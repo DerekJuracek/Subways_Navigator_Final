@@ -1,0 +1,484 @@
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+}
+
+calcite-loader {
+  align-self: center;
+  justify-self: center;
+}
+
+#header-title {
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  margin: 0;
+  padding: 0.75rem;
+  padding-left: 100px;
+  margin-right: 0;
+  position: relative;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #0039a6;
+  /* #0039a6 color for blue subways */
+  z-index: 1000;
+  white-space: nowrap;
+  min-width: 500px;
+}
+
+#header-title img {
+  position: absolute;
+  left: 35px;
+}
+
+@media (max-width: 650px) {
+  #header-title {
+    font-size: 16px;
+    padding-right: 0;
+  }
+}
+
+/* .esri-search__input {
+  width: 325px;
+} */
+
+@media (min-width: 1901px) {
+  .esri-search__input {
+    width: 400px;
+  }
+  #search-widget-container {
+    margin-left: 60%;
+    margin-right: 1%;
+  }
+}
+
+@media (max-width: 1900px) and (min-width: 1600px) {
+  .esri-search__input {
+    width: 375px;
+  }
+  #search-widget-container {
+    margin-left: 60%;
+    margin-right: 1%;
+  }
+}
+
+@media (max-width: 1599px) and (min-width: 1350px) {
+  .esri-search__input {
+    width: 350px;
+  }
+  #search-widget-container {
+    margin-left: 52%;
+    margin-right: 3%;
+  }
+}
+
+@media (max-width: 1350px) and (min-width: 1100px) {
+  .esri-search__input {
+    width: 275px;
+  }
+  #search-widget-container {
+    margin-left: 45%;
+    margin-right: 5%;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 1099px) and (min-width: 910px) {
+  .esri-search__input {
+    width: 175px;
+  }
+  #search-widget-container {
+    margin-left: 40%;
+    margin-right: 7.5%;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 909px) and (min-width: 750px) {
+  .esri-search__input {
+    width: 150px;
+  }
+  #search-widget-container {
+    margin-left: 33%;
+    margin-right: 9%;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 749px) and (min-width: 650px) {
+  .esri-search__input {
+    width: 125px;
+  }
+  #search-widget-container {
+    margin-left: 25%;
+    margin-right: 12%;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 649px) {
+  .esri-search__input {
+    width: 125px;
+  }
+  #search-widget-container {
+    margin-left: 25%;
+    margin-right: 12%;
+    border-radius: 5px;
+  }
+}
+
+calcite-shell-header {
+  background-color: white;
+}
+
+#info-content {
+  padding: 0.75rem;
+}
+
+calcite-rating {
+  margin-top: 0.25rem;
+}
+
+#addLayers {
+  width: 275px;
+}
+
+calcite-list-item {
+  width: 270px;
+}
+
+.submit-text {
+  display: inline !important;
+  position: relative !important;
+  top: 0 !important;
+  left: 0 !important;
+  color: white;
+}
+
+calcite-tabs {
+  overflow-x: hidden;
+  width: fit-content;
+
+  flex-direction: column;
+  height: 100%;
+}
+
+calcite-tab-nav {
+  flex-shrink: 0;
+}
+
+calcite-tab-panel {
+  height: calc(100% - 48px); /* 48px is the height of the tab-title */
+  overflow: auto;
+}
+
+#feature-table-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#feature-table-content {
+  width: 100%; /* Change the width percentage or use a fixed width in pixels */
+  height: 300px; /* Change the height in pixels */
+}
+
+/* Add custom styles for the accordion */
+.calcite-dropdown {
+  z-index: 9999;
+}
+
+.card-container {
+  margin: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-content: space-evenly;
+}
+calcite-chip {
+  color: var(--calcite-ui-danger);
+}
+calcite-notice {
+  position: relative;
+  margin: 0.75rem;
+}
+
+#filter-panel {
+  height: 400px;
+  width: auto;
+}
+
+#asset-locator-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+#sir,
+#track {
+  width: 230px;
+  /* padding-top: 5px; */
+  padding-left: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0%;
+
+  /* padding-right: 10px; */
+}
+
+#track {
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+
+#assetloclabel {
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#alert {
+  display: hidden;
+}
+.asset-locator-panel {
+  width: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  align-items: center;
+}
+
+/* #input1,
+#input2,
+#input3,
+#input4,
+#input5 {
+  width: 235px;
+}
+
+#first,
+#second {
+  width: 235px;
+} */
+
+#tabs {
+  width: 250px;
+}
+
+#sidebar {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* width: 195px; */
+}
+
+#topbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-button {
+  height: 34px; /* Change as needed */
+  width: 34px; /* Change as needed */
+  font-size: 12px; /* Change as needed */
+  border: 1px;
+  border-color: darkgray;
+  margin-bottom: 2px;
+}
+
+.action-button:hover {
+  background-color: #e2e2e2;
+}
+
+#filter-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+
+  background-color: rgb(70, 68, 72);
+  height: 400px;
+}
+
+#filter-container calcite-dropdown {
+  margin-top: 35px; /* Adjust this value as per your requirements */
+}
+
+#filter-header {
+  background-color: purple;
+}
+
+.header-content {
+  background-color: aqua;
+}
+
+#attributeBar {
+  position: absolute;
+  /* left: 44px; */
+  bottom: 0;
+  height: 0px;
+  background: white;
+  width: 100%;
+  /* width: calc(100% - 198px); */
+  color: black;
+}
+
+/* #attributeBar.collapsed #text {
+  display: none;
+} */
+
+#collapseButton {
+  position: fixed;
+  top: 67px;
+  right: 280px;
+  transform: translateY(-100% -200px);
+}
+
+#text {
+  color: black;
+  padding: 3%;
+}
+
+#urlInput {
+  width: 250px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+#urlButton {
+  padding-left: 150px;
+  width: 110px;
+}
+
+#submitCsv,
+#submitShp {
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#csvFileInput {
+  padding-left: 5px;
+}
+
+#removeGraphics {
+  position: fixed;
+  padding-left: 210px;
+  padding-top: 10px;
+
+  /* width: 50px; */
+}
+
+.container-asset {
+  display: flex;
+  justify-content: space-between;
+}
+
+#assetLocatorPanel {
+  padding: 10px;
+  /* width: 250px; */
+}
+
+#filterInputs {
+  color: white;
+}
+
+#removeFilter {
+  padding-top: 35px;
+}
+
+#urlInputPanel {
+  width: 275px;
+}
+
+#urlText {
+  font-size: 12px;
+  width: 275px;
+}
+
+#addTools {
+  height: 100%;
+}
+
+#opacityDiv {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+#information {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 90%;
+}
+
+#infoIcon:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.esri-basemap-layer-list__base-layers-heading {
+  display: none;
+}
+
+#filterTip {
+  size: 10px;
+  font-style: italic;
+  padding-bottom: 0;
+  font-size: 10px;
+}
+
+#tooltip-button {
+  padding-top: 20px;
+  /* padding-left: 185px; */
+}
+
+#removeFilter {
+  padding-bottom: 5px;
+}
+
+/* .content-wrapper content-container {
+  width: ;
+} */
+
+#exportBtn {
+  display: none;
+}
+
+/* calcite-combobox-item {
+  scale: s;
+} */
+#combo1,
+#combo2,
+#combo3,
+#resetViewFilterButton {
+  padding-top: 5px;
+  /* overflow: auto; */
+  /* height: 50px; */
+  /* overflow: auto; */
+  /* z-index: 1; */
+}
+
+#filterButton {
+  padding-left: 80%;
+}
+
+#filterLabel {
+  font-weight: 500;
+}
+
+/* #hrLabel {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  size: 10px;
+} */
