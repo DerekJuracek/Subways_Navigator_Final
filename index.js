@@ -83,7 +83,7 @@ require([
         flowType: "authorization-code",
         popup: true,
         portalUrl: esriConfig.portalUrl,
-        popupCallbackUrl: "http://127.0.0.1:5501/oauth-callback.html",
+        popupCallbackUrl: "https://github.com/DerekJuracek/Subways_Navigator_Final/oauth-callback.html",
         popupWindowFeatures: `height=${height},width=${width},top=${top},left=${left}`,
       });
 
