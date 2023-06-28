@@ -3,7 +3,7 @@
   "credentialPortalURL": "https://mtagisdev.lirr.org/dosportaldev/sharing/rest",
   "webmapId": "a5b26e6f79574142b287d3aeaeee5d50",
   "portalURL": "https://mtagisdev.lirr.org/dosportaldev/",
-  "portalFolderURL": "https://mtagisdev.lirr.org/dosportaldev/sharing/",
+  "portalFolderURL": "https://mtagisdev.lirr.org/dosportaldev/sharing",
   "portalURLEquipment": "https://mtagisdev.lirr.org/dosserverdev/rest/services/EAMPRD_EQUIPMENT",
   "stationPlansURL": "https://mtagisdev.lirr.org/dosserverdev/rest/services/StationPlanGeoreferencing/StationPlans/ImageServer",
   "trackLrsURL": "https://mtagisdev.lirr.org/dosserverdev/rest/services/LRS/DOS_Track_Network/MapServer/exts/LRServer/networkLayers/1",
