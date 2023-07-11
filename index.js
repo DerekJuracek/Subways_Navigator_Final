@@ -63,7 +63,7 @@ require([
 ) {
   // Fetch config based on the URL parameter.
   const urlParams = new URLSearchParams(window.location.search);
-  const configUrl = urlParams.get("config") || "test.json";
+  const configUrl = urlParams.get("config") || "dev.json";
 
   fetch(configUrl)
     .then((response) => response.json())
